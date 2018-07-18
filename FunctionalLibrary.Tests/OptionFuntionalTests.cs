@@ -4,6 +4,8 @@ using System.Text;
 using Xunit;
 using FluentAssertions;
 using static FunctionalLibrary.Functional;
+using FunctionalLibrary.Tests.Examples;
+using System.Linq;
 
 namespace FunctionalLibrary.Tests
 {
@@ -19,9 +21,15 @@ namespace FunctionalLibrary.Tests
         }
 
         [Fact]
-        public void ShouldBeAbleToCreateOptionsWithNoneValue()
+        public void ParseEnumIntoType()
         {
-           // Option<string> emptyValue = Option.None;
+            Func<object> none = () => { return string.Empty; };
+            "Friday".Parse<DayOfWeek>()
+                .Match
+                (
+                   None: none,
+                   Some: (value) => value.Should().Be(DayOfWeek.Friday)
+                );
         }
     }
 }

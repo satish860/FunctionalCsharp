@@ -1,4 +1,4 @@
-[![Build status](https://functionalcsharp.visualstudio.com/_apis/public/build/definitions/8e82a28c-3a30-44a0-93b5-1aecf127aa1a/1/badge)](https://functionalcsharp.visualstudio.com/_apis/public/build/definitions/8e82a28c-3a30-44a0-93b5-1aecf127aa1a/1/badge]
+[![Build status](https://functionalcsharp.visualstudio.com/MyFirstProject/_apis/build/status/MyFirstProject-.NET Desktop-CI?branch=master)](https://functionalcsharp.visualstudio.com/MyFirstProject/_build/latest?definitionId=8e82a28c-3a30-44a0-93b5-1aecf127aa1a&branch=master)]
 # FunctionalCsharp
 My implementation of Functional csharp constructs
 
